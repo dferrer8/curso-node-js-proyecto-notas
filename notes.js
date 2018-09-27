@@ -10,7 +10,18 @@ const removeNote = (id) => {
   return 'Nota eliminada'
 }
 
+const listNote = () => {
+  console.log('Listado de notas.')
+  return 'Listado de notas'
+}
+
+const readNote = (id) => {
+  console.log(`Esta es la nota con id ${id}.`)
+  return 'Nota leída'
+}
 module.exports = {
   addNote,
-  removeNote
+  removeNote,
+  listNote,
+  readNote
 }
