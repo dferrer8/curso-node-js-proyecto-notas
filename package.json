@@ -4,7 +4,7 @@
   "description": "Generar lista de notas con almacenamiento en json y en ficheros",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
