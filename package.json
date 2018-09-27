@@ -1,0 +1,33 @@
+{
+  "name": "proyecto-notas-df8",
+  "version": "1.0.0",
+  "description": "Generar lista de notas con almacenamiento en json y en ficheros",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dferrer8/curso-node-js-proyecto-notas.git"
+  },
+  "keywords": [
+    "notas",
+    "almacenamiento"
+  ],
+  "author": "daviddfg <david.dfg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dferrer8/curso-node-js-proyecto-notas/issues"
+  },
+  "homepage": "https://github.com/dferrer8/curso-node-js-proyecto-notas#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0"
+  }
+}
