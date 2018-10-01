@@ -21,18 +21,22 @@ if (command === 'add') {
 
   if (note) {
     console.log('Nota creada')
+    notes.logNote(note)
   }
 } else if (command === 'remove') {
   notes.removeNote(argv.title)
   const notaBorrada = notes.removeNote(argv.title)
 
-
   // console.log(`Nota borrada ${argv.title}`)
 } else if (command === 'list') {
-  notes.listNote
+  const allNotes = notes.getAll
+  allNotes.forEach(note => notes.logNote(note)
+  )
   // console.log('Listado de notas')
 } else if (command === 'read') {
-  notes.readNote(argv.title)
+  // notes.readNote(argv.title)
+  notes.getNote(argv.title)
+
   // console.log('Contenido de la nota')
 } else {
   console.log('Comando desconocido')

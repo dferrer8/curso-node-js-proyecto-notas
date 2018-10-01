@@ -31,7 +31,33 @@ const removeNote = (title) => {
   // Mejor en la app.js console.log(`Nota con titulo ${title} eliminada.`)
 }
 
+const getNote = (title) => { // readNote
+  const notes = fetchNotes()
+  // variante
+
+  const myNotes = notes.find(
+  // const myNotes = notes.filter(
+    (note) => note.title === title
+    // (note) => {return note.title === title}
+  )
+  return myNotes[0] // sera un array de un solo elemento
+}
+
+const getAll = () => {
+  const notes = fetchNotes()
+  return notes
+}
+
+const logNote = (note) => {
+  console.log(`\tTítulo: ${note.title}`)
+  console.log(`\tTexto: ${note.body}`)
+}
+
 module.exports = {
   addNote,
-  removeNote
+  removeNote,
+  readNote,
+  getAll,
+  logNote
+
 }
