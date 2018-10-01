@@ -7,7 +7,7 @@ const yargs = require('yargs')
 
 const { argv } = require('yargs') // ES6: express operator
 
-console.log(argv)
+// console.log(argv)
 const command = argv._[0]
 
 // antes de yargs
